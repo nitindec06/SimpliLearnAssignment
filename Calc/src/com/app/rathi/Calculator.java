@@ -24,20 +24,20 @@ public class Calculator {
 			Calculations calculations = new Calculations(firstNumber, secondNumber);
 			switch (operator) {
 			case "+":
-				System.out.print("Result after adding two numbers = ");
-				System.out.println(calculations.addition(firstNumber, secondNumber));
+				System.out.print(" " + firstNumber + "+" + secondNumber + "   = ");
+				System.out.println(calculations.addition());
 				break;
 			case "-":
-				System.out.print("Result after substracting two numbers = ");
-				System.out.println(calculations.substraction(firstNumber, secondNumber));
+				System.out.print(" " + firstNumber + "-" + secondNumber + "   = ");
+				System.out.println(calculations.substraction());
 				break;
 			case "*":
-				System.out.print("Result after multiplying two numbers = ");
-				System.out.println(calculations.multiplication(firstNumber, secondNumber));
+				System.out.print(" " + firstNumber + "X" + secondNumber + "   = ");
+				System.out.println(calculations.multiplication());
 				break;
 			case "/":
-				System.out.print("Result after dividing two numbers = ");
-				System.out.println(calculations.division(firstNumber, secondNumber));
+				System.out.print(" " + firstNumber + "/" + secondNumber + "   = ");
+				System.out.println(calculations.division());
 				break;
 			default:
 				System.out.println("Please enter a correct airthematic operator");
